@@ -1,0 +1,360 @@
+/* .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #ffffff, #05ee7d); 
+}
+
+.company-logo img {
+    width: 200px; 
+}
+
+.slogan {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.slogan h1 {
+    font-size: 36px; 
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+.slogan img {
+    width: 100px; 
+} */
+/* ------------------------------home img section control------------------------------------ */
+
+.custom-container-home {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px) contrast(50%);
+}
+
+.home-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 21, 18, 0.7); /* Black with 70% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.home-img-text {
+    z-index: 1; /* Ensure text is above overlay */
+}
+
+.home-img-text h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.home-img-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* ------------------------------home img section control------------------------------------ */
+/* Product slider container  */
+
+.product-slider-container {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+.product-slider-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+
+/* <!-- Media queries --> */
+
+@media (max-width: 768px) {
+    /* Media query styles */
+}
+
+@media (max-width: 576px) {
+    /* Media query styles */
+}
+
+
+/* Previous and Next Button Styles  */
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.wrapper {
+    max-width: calc(100% - 40px); 
+    width: calc(100% - 40px); 
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px; 
+    overflow-x: hidden; 
+}
+
+
+/* <!-- Product slider --> */
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel::-moz-scrollbar {
+    width: 0;
+}
+
+.card {
+    scroll-snap-align: start;
+    height: auto; 
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 8px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card .img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .product-details {
+    margin-top: 20px;
+}
+
+.card .product-details .product-name {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.card .product-details .price {
+    color: #6A6D78;
+    font-size: 1.2rem; 
+    margin-bottom: 12px; 
+}
+
+.card .product-details .description {
+    color: #6A6D78;
+    font-size: 1rem; 
+    line-height: 1.4; 
+    margin-bottom: 12px; 
+}
+
+.card .product-details .add-to-cart-btn {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem; 
+    padding: 8px 20px;
+    border-radius: 8px;
+    
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-add-to-cart:hover {
+    background-color: rgba(20, 69, 160, 0.671);
+    color: #fff;
+}
+
+/* Media query for screens up to 1200px wide */
+@media screen and (max-width: 1200px) {
+    /* Adjust the grid column width for the carousel */
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 12px); 
+    }
+}
+
+/* Media query for screens up to 900px wide */
+@media screen and (max-width: 900px) {
+    /* Adjust the grid column width for the carousel */
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 12px);
+    }
+}
+
+/* Media query for screens up to 600px wide */
+@media screen and (max-width: 600px) {
+    /* Adjust the grid column width for the carousel */
+    .wrapper .carousel {
+        grid-auto-columns: 100%; 
+    }
+}
+
+/* ------------------------------------  Design for header and footer-----------------------------*/
+
+
+
+.custom-nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header-search{
+    width: 50%;
+}
+
+.nav-list{
+    display: flex;
+    
+}
+.nav-list li,ul {
+    margin-inline: 1rem;
+    list-style-type: none;
+}
+
+
+
+.custom-nav-list .nav-item {
+    margin: 0 15px;
+}
+
+.custom-nav-list .dropdown-menu {
+    min-width: 150px;
+    width: 100%;
+}
+.custom-nav{
+    width: 100%;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-nav-design{
+    background-color: rgb(138,161,177);
+    width: 100%;
+}
+.custom-nav-dropdown{
+    background-color: rgb(138,161,177);
+}
+.custom-nav-button{
+padding-top: 1%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(138,161,177);
+    clear: both;
+    position: relative;
+    /* height: 200px; */
+    /* margin-top: 100vh; */
+
+}
+.custom-btn-design:active{
+    background-color: rgb(138,161,177);
+}
+.custom-sub-header{
+    display: flex;
+    align-items: center;
+}
+#footer-dynamic{
+    margin-top: 2%;
+}
+
+
+/* ------------------------container for slider----------------------------- */
+.custom-container{
+    position: relative;
+    width: 84%;
+    left: 8%;
+    right: 8%;
+    background-color: rgba(138, 161, 177, 0.486);
+    padding-bottom: 1%;
+}

@@ -1,0 +1,202 @@
+
+ /* ----------------------------------------------------------------- */
+
+ /* Gradient background for the body */
+body {
+   background: linear-gradient(to bottom, rgba(138, 161, 177, 0.656), rgba(138, 161, 177, 0.804));
+}
+
+/* Category heading styling */
+.category-heading {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin: 30px 0 10px;
+   text-decoration: underline;
+   font-size: 24px;
+}
+
+/* Container for product cards */
+.product-contain {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin: 0 -10px;
+}
+
+/* Individual product card */
+.product-card {
+   flex-basis: calc(20% - 20px);
+   background-color: #fff;
+   border-radius: 4px;
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   margin: 10px;
+   text-align: center;
+   transition: transform 0.3s ease;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside product card */
+.product-card img {
+   width: 100%;
+   max-height: 200px;
+   object-fit: cover;
+   border-radius: 4px;
+   margin-bottom: 15px;
+}
+
+/* Product information styling */
+.product-info {
+   margin-bottom: 15px;
+}
+
+/* Title of the product */
+.product-title {
+   margin-bottom: 5px;
+   font-weight: 500;
+}
+
+/* Price of the product */
+.product-price {
+   margin-bottom: 10px;
+   color: #444;
+}
+
+/* Description of the product */
+.product-description {
+   color: #666;
+   line-height: 1.6;
+}
+
+/* Add to cart button */
+.btn-add-to-cart {
+   display: inline-block;
+   margin-top: 15px;
+   padding: 10px 30px;
+   background-color: #333;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   text-transform: uppercase;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+/* Hover effect for add to cart button */
+.btn-add-to-cart:hover {
+   background-color: #cf0a28;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767.98px) {
+   .product-card {
+       flex-basis: calc(50% - 20px);
+   }
+}
+
+/* Responsive adjustments for medium screens */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+   .product-card {
+       flex-basis: calc(33.33% - 20px);
+   }
+}
+
+/* Default styling for larger screens */
+@media (min-width: 1024px) {
+   .product-card {
+       flex-basis: calc(20% - 20px);
+   }
+}
+
+
+
+
+ /* ---------------------Header and footer design start------------------------------------ */
+ .custom-nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header-search{
+    width: 50%;
+}
+
+.nav-list{
+    display: flex;
+    
+}
+.nav-list li,ul {
+    margin-inline: 1rem;
+    list-style-type: none;
+}
+
+
+
+.custom-nav-list .nav-item {
+    margin: 0 15px;
+}
+
+.custom-nav-list .dropdown-menu {
+    min-width: 150px;
+    width: 100%;
+}
+.custom-nav{
+    width: 100%;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-nav-design{
+    background-color: rgb(138,161,177);
+    width: 100%;
+}
+.custom-nav-dropdown{
+    background-color: rgb(138,161,177);
+}
+.custom-nav-button{
+padding-top: 1%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(138,161,177);
+    clear: both;
+    position: relative;
+    /* height: 200px; */
+    /* margin-top: 100vh; */
+
+}
+.custom-btn-design:active{
+    background-color: rgb(138,161,177);
+}
+.custom-sub-header{
+    display: flex;
+    align-items: center;
+}
+#footer-dynamic{
+    margin-top: 2%;
+}
+ /* ---------------------Header and footer design end------------------------------------ */
